@@ -42,8 +42,8 @@ class Banner extends Component {
     const { classes, quantity, config } = this.props;
     const number = quantity ? ` (${quantity})` : "";
 
-    const productLink = <Link to={`/product`} style={{flex: 1}} className={classes.menuButton}>
-      <Typography variant="button" gutterBottom>test</Typography>
+    const productLink = <Link to={`/shop`} style={{flex: 1}} className={classes.menuButton}>
+      <Typography variant="button" gutterBottom>Store</Typography>
     </Link>
 
     let menu;

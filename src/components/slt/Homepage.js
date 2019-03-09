@@ -27,17 +27,18 @@ function AutoGrid(props) {
         <Grid item xs={12}>
         <div class="box1">
 
-          <h1 class="tag">hello</h1>
+          <h1 class="tag">Salete</h1>
 
         </div>
         </Grid>
-        <Grid item xs>
-          <Paper className={classes.paper}>xs</Paper>
+        <Grid item xs={6}>
+        <div class="box2">
+
+            <h1 class="tag">hello</h1>
+
+        </div>
         </Grid>
-        <Grid item xs>
-          <Paper className={classes.paper}>xs</Paper>
-        </Grid>
-        <Grid item xs>
+        <Grid item xs={6}>
           <Paper className={classes.paper}>xs</Paper>
         </Grid>
       </Grid>

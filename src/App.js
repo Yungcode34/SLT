@@ -20,7 +20,8 @@ import Admin from './components/admin/Admin';
 import Login from './components/admin/Login';
 import Homepage from './components/slt/Homepage';
 import Landingpage from './components/slt/Landingpage';
-
+import Blog from './components/slt/Blog';
+import Biography from './components/slt/Biography';
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -60,11 +61,13 @@ class App extends Component {
               <div className={config.store_slug}>
                 <div className="bg" />
                 <Banner quantity={this.state.quantity} config={config} />
-                <Route exact path="/"
+                <Route exact path="/shop"
                   render={(props) => <Landing config={config} />}
                 />
                 <Route exact path="/homepage" component={Homepage} />
-                <Route exact path="/landingpage" component={Landingpage} />
+                <Route exact path="/blog" component={Blog} />
+                <Route exact path="/biography" component={Biography} />
+                <Route exact path="/" component={Landingpage} />
                 <Route exact path="/product"
                   render={(props) => <Products config={config} />}
                 />

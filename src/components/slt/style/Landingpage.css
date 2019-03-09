@@ -1,13 +1,10 @@
 body{
-   
-
-}
-#background{
-    background: url('../../../assets/IMG_5740.png');
+    background: url('../../../assets/paperbackground.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
 }
 h1{
     text-align: center;
