@@ -1,0 +1,38 @@
+{
+  "store_name": "saleté",
+  "store_slug": "react-stripe-store",
+  "api_key": "{STRIPE_PUBLIC_KEY}",
+  "colors": {
+    "primary": {
+      "main": "#000000",
+      "dark": "#00008B",
+      "contrastText": "#DC143C"
+    },
+    "secondary": {
+      "main": "#696969"
+    }
+  },
+  "products": [
+    {
+      "name": "Shirt",
+      "url": "url-for-product",
+      "stripe_id": "{STRIPE_PRODUCT_ID}",
+      "description": "What a great product!",
+      "photos": ["photo1.jpg","photo2.jpg"],
+      "details": [
+        "These are details that get rendered as bullet points",
+        "Useful for short + sweet info"
+      ],
+      "variants": [
+        {
+          "name": "Size's",
+          "options":[
+            {"label": "Small"},
+            {"label": "Medium"},
+            {"label": "Large"}
+          ]
+        }
+      ]
+    }
+  ]
+}

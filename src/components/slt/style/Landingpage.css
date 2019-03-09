@@ -1,0 +1,16 @@
+body{
+   
+
+}
+#background{
+    background: url('../../../assets/IMG_5740.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
