@@ -2,7 +2,7 @@ body{
 background-color: black;
 }
 .tag{
-    color: blue;
+    color: red;
     text-align: center;
     margin: auto;
 }
@@ -11,4 +11,5 @@ background-color: black;
 }
 .box2{
     height: 400px;
+   background-color: black
 }
