@@ -1,3 +1,4 @@
+//importing all the stuff we need for our application
 import React, { Component } from 'react';
 import { StripeProvider } from 'react-stripe-elements';
 import {
@@ -22,6 +23,8 @@ import Homepage from './components/slt/Homepage';
 import Landingpage from './components/slt/Landingpage';
 import Blog from './components/slt/Blog';
 import Biography from './components/slt/Biography';
+
+//multi theme created using material ui
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -43,6 +46,8 @@ const theme = createMuiTheme({
 
 class App extends Component {
   state = {};
+  
+//functions and the rendering of all our components
 
   componentDidMount() {
     const slug = `${config.store_slug}_products`;

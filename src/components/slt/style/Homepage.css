@@ -17,9 +17,24 @@ background-color: black;
 
 .box2{
     height: 800px;
-   background-color: black
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-image: url('../../../assets/leftsidebar.png');
 }
 .box3{
     height: 400px;
-   background-color: black
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-image: url('../../../assets/mother.JPG');
+    box-shadow: 10px 10px 5px black;
+}
+.box4{
+    height: 400px;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-image: url('../../../assets/paris.jpg');
+    box-shadow: 10px 10px 5px black;
 }

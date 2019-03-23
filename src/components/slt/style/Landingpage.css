@@ -1,10 +1,9 @@
 body{
-    background: url('../../../assets/paperbackground.jpg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 1000px;
+    background: url('../../../assets/backgrounddirt.jpg');
+
+    background-position: center;
+    height: 100%;
+
 }
 h1{
     text-align: center;
