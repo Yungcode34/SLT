@@ -7,6 +7,7 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import ButtonBase from '@material-ui/core/ButtonBase';
 import LayoutBody from '../LayoutBody';
+import vid from '../../assets/vid.mov';
 
 const styles = theme => ({
 
@@ -94,25 +95,25 @@ function AutoGrid(props) {
 
   const images = [
     {
-      url:'../../assets/mother.JPG',
+      url:'https://pbs.twimg.com/media/DzOn8JAU0AAS-pe.jpg',
       title: 'Snorkeling',
       width: '50%',
     },
     {
       url:
-        'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=400&q=80',
+        'https://pbs.twimg.com/media/Duq4R3dWoAEo4-J.jpg',
       title: 'Hiking',
       width: '50%',
     },
     {
       url:
-        'https://images.unsplash.com/photo-1453747063559-36695c8771bd?auto=format&fit=crop&w=400&q=80',
+        'https://pbs.twimg.com/media/Dr3pOwXVAAAT6Sf.jpg',
       title: 'Tour',
       width: '100%',
     },
     {
       url:
-        'https://images.unsplash.com/photo-1533727937480-da3a97967e95?auto=format&fit=crop&w=400&q=80',
+        'https://pbs.twimg.com/media/Dr3pOv2VAAEVF-9.jpg',
       title: 'Fitness',
       width: '20%',
     },
@@ -122,12 +123,46 @@ function AutoGrid(props) {
       title: 'Reading',
       width: '40%',
     },
+    {
+      url:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0upzQhmvtT5aUE1y2xdhkapdxLOzDKdGvpBXSmaHs9qTXQsZv',
+      title: 'Reading',
+      width: '40%',
+    },
   ];
 
         return(
-
 <div className={classes.root}>
-<Grid item sm={12} xs={12}>
+        <Grid item sm={12} xs={12}>
+  
+<header class="v-header container">
+            <div class="fullscreen-video-wrap">
+            <video className='videoTag' autoPlay loop muted>
+            <source src={vid} type='video/mp4' />
+            </video>
+            </div>
+            <div class="header-overlay"></div>
+            <div class="header-content">
+            <h1>SLT SHIT</h1>
+            <p>testing this</p>
+            <a href="http://localhost:3000/shop" class="btn">Shop</a>
+            </div> 
+</header>
+    <section class="section section-a">
+                <div class="container">
+                  <h2>Section A</h2>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium, ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus neque eligendi facere soluta dolor ducimus!</p>
+                </div>
+    </section>
+
+    <section class="section section-b">
+                <div class="container">
+                  <h2>Section B</h2>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium, ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus neque eligendi facere soluta dolor ducimus!</p>
+                </div>
+    </section>
+        </Grid>
+        <Grid item sm={12} xs={12}>
         <div class="box1">
 
 

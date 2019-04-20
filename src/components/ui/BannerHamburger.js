@@ -45,10 +45,10 @@ class BannerHamburger extends Component {
         >
           <List style={{ width: "200px" }}>
             <ListItem>
-              <Link to={`/`} className={classes.hamburgerButton}
+              <Link to={`/HOMEPAGE`} className={classes.hamburgerButton}
                 onClick={() => this.toggleMenu(false)}
               >
-                <Typography variant="button" gutterBottom>Home</Typography>
+                <Typography variant="button" gutterBottom>HOME</Typography>
               </Link>
             </ListItem>
             <ListItem>
@@ -63,6 +63,20 @@ class BannerHamburger extends Component {
                 onClick={() => this.toggleMenu(false)}
               >
                 <Typography variant="button" gutterBottom>Cart{this.props.number}</Typography>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link to={`/blog`} className={classes.hamburgerButton}
+                onClick={() => this.toggleMenu(false)}
+              >
+                <Typography variant="button" gutterBottom>blog{this.props.number}</Typography>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link to={`/gallery`} className={classes.hamburgerButton}
+                onClick={() => this.toggleMenu(false)}
+              >
+                <Typography variant="button" gutterBottom>gallery{this.props.number}</Typography>
               </Link>
             </ListItem>
           </List>

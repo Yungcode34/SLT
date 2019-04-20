@@ -65,7 +65,7 @@ class App extends Component {
             <MuiThemeProvider theme={theme}>
               <div className={config.store_slug}>
                 <div className="bg" />
-                <Banner quantity={this.state.quantity} config={config} />
+                
                 <Route exact path="/shop"
                   render={(props) => <Landing config={config} />}
                 />

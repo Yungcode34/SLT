@@ -1,9 +1,13 @@
-body{
-    background: url('../../../assets/backgrounddirt.jpg');
 
+.landing{
+    height: 950px;
+    width: 100%;
+    background-image: url('../../../assets/nothappy.png');
     background-position: center;
-    height: 100%;
-
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: 'cover';
 }
 h1{
     text-align: center;

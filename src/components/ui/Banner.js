@@ -42,9 +42,7 @@ class Banner extends Component {
     const { classes, quantity, config } = this.props;
     const number = quantity ? ` (${quantity})` : "";
 
-    const productLink = <Link to={`/shop`} style={{flex: 1}} className={classes.menuButton}>
-      <Typography variant="button" gutterBottom>Store</Typography>
-    </Link>
+    const productLink = null;
 
     let menu;
     if (isWidthDown('sm', this.props.width)) {
@@ -63,12 +61,9 @@ class Banner extends Component {
       <div className={classes.root} >
         <AppBar position="static" color="secondary" className={classes.appbar}>
           <Toolbar>
-            <Link to={`/`} className={classes.menuButton}>
+            <Link to={`/homepage`} className={classes.menuButton}>
               <div className="logo" />
               <h3 className={classes.storeName}>{config.store_name}</h3>
-            </Link>
-            <Link to={`/homepage`} className={classes.menuButtons}>
-            <Typography variant="button" gutterBottom>Homepage </Typography>
             </Link>
             { menu }
           </Toolbar>
